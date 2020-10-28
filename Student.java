@@ -17,7 +17,7 @@ public class Student {
 
     String name;
     int id = 1;
-    String sureName;
+    String surName;
     String city;
     int age;
     int YearOfBirth;
@@ -27,11 +27,11 @@ public class Student {
     boolean gender;
 
 
-    Student(String name, String sureName, String city, int age, int YearOfBirth, String CarType, String color, double height, boolean gender) {
+    Student(String name, String surName, String city, int age, int YearOfBirth, String CarType, String color, double height, boolean gender) {
 
         this.name = name;
         this.id = Current_id++;
-        this.sureName = sureName;
+        this.surName = surName;
         this.city = city;
         this.age = age;
         this.YearOfBirth = YearOfBirth;
@@ -46,7 +46,7 @@ public class Student {
     /*public void PrintData() {
 
         System.out.println("My name is:" + name);
-        System.out.println("My sure Name is:" + sureName);
+        System.out.println("My Sur Name is:" + surName);
         System.out.println("My ID is:" + id);
         System.out.println("My city is:" + city);
         System.out.println("My age is:" + age);
@@ -90,7 +90,7 @@ public class Student {
             String name2 = sc.nextLine();
 
             System.out.println("Your sure Name pls:");
-            String sureName2 = sc.nextLine();
+            String surName2 = sc.nextLine();
 
             System.out.println("Your city pls:");
             String city2 = sc.nextLine();
@@ -114,7 +114,7 @@ public class Student {
             boolean gender2 = sc.nextBoolean();
 
             Student x = new Student(name2,
-                    sureName2, city2,
+                    surName2, city2,
                     age2, YearOfBirth2, CarType2,
                     color2, height2,
                     gender2);
@@ -160,7 +160,7 @@ public class Student {
 
         return " \n Student { name=' "+name+" "+'\''+
                 ", "+"Student id number=' "+id+" "+'\''+
-                ", surname=' "+sureName+ " "+'\''+
+                ", surname=' "+surName+ " "+'\''+
                 ",city= '"+city+" "+'\''+
                 ", age=' "+age+" "+'\''+
                 ", YearOfBirth=' "+YearOfBirth+" "+'\''+
