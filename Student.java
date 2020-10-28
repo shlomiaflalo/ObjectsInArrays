@@ -5,8 +5,8 @@ import java.util.Scanner;
         /*
 
         Jesus -
-        this class we are asking the user how many Students he's want to 
-        create & initialize them all, then we put 
+        this class we are asking the user how many Students he's want to
+        create & initialize them all, then we put
         all of them inside of arrays and show them.
         which means there is index (position) to each of them in our program.
 
@@ -17,7 +17,7 @@ public class Student {
 
     String name;
     int id = 1;
-    String surName;
+    String Surname;
     String city;
     int age;
     int YearOfBirth;
@@ -27,11 +27,11 @@ public class Student {
     boolean gender;
 
 
-    Student(String name, String surName, String city, int age, int YearOfBirth, String CarType, String color, double height, boolean gender) {
+    Student(String name, String Surname, String city, int age, int YearOfBirth, String CarType, String color, double height, boolean gender) {
 
         this.name = name;
         this.id = Current_id++;
-        this.surName = surName;
+        this.Surname = Surname;
         this.city = city;
         this.age = age;
         this.YearOfBirth = YearOfBirth;
@@ -46,7 +46,7 @@ public class Student {
     /*public void PrintData() {
 
         System.out.println("My name is:" + name);
-        System.out.println("My Sur Name is:" + surName);
+        System.out.println("My Surname is:" + Surname);
         System.out.println("My ID is:" + id);
         System.out.println("My city is:" + city);
         System.out.println("My age is:" + age);
@@ -60,6 +60,7 @@ public class Student {
 
 
     }*/
+
 
     public static void main(String[] args) {
 
@@ -89,8 +90,8 @@ public class Student {
             System.out.println("Your name pls:");
             String name2 = sc.nextLine();
 
-            System.out.println("Your sure Name pls:");
-            String surName2 = sc.nextLine();
+            System.out.println("Your Surname pls:");
+            String Surname2 = sc.nextLine();
 
             System.out.println("Your city pls:");
             String city2 = sc.nextLine();
@@ -114,7 +115,7 @@ public class Student {
             boolean gender2 = sc.nextBoolean();
 
             Student x = new Student(name2,
-                    surName2, city2,
+                    Surname2, city2,
                     age2, YearOfBirth2, CarType2,
                     color2, height2,
                     gender2);
@@ -160,7 +161,7 @@ public class Student {
 
         return " \n Student { name=' "+name+" "+'\''+
                 ", "+"Student id number=' "+id+" "+'\''+
-                ", surname=' "+surName+ " "+'\''+
+                ", Surname=' "+Surname+ " "+'\''+
                 ",city= '"+city+" "+'\''+
                 ", age=' "+age+" "+'\''+
                 ", YearOfBirth=' "+YearOfBirth+" "+'\''+
